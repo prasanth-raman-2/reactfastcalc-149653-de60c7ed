@@ -1,0 +1,20 @@
+module.exports = {
+  root: true,
+  env: {
+    browser: true,
+    es2022: true
+  },
+  extends: [
+    'eslint:recommended'
+  ],
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module'
+  },
+  plugins: [],
+  rules: {
+    'no-unused-vars': ['warn', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
+    'no-console': 'off'
+  },
+  settings: {}
+}
